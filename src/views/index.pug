@@ -1,0 +1,57 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name = "description" content = "Sign the petition to the North Carolina General Assembly demanding: NO DATA CENTERS IN NORTH CAROLINA! ")      
+    meta(name = "author" content = "Party for Socialism and Liberation")
+    title No Data Centers in North Carolina
+    link(rel="icon" type="image/png" href="/assets/favicon.png")
+    link(href='dist/CSS/main.css', rel='stylesheet', type='text/css')
+  body
+    header 
+      #background-image
+      #overlay
+      img.logo#psl(src="/assets/logo.png")
+      img.logo#campaign(src="/assets/campaign-logo.png")
+      #text 
+        p 
+          i Petition to the North Carolina General Assembly:  
+        h1 
+          | No Data Centers
+          br
+          | in North Carolina!
+        h1.small-screen
+          | No Data 
+          br 
+          | Centers 
+          br 
+          | in NC!
+        .buttons
+          a.button(href="#sign") Sign the Petition
+          a.button(href="#endorse") Endorse as Organization / Elected Official
+      #petition.body 
+        h2 Demands
+        p 
+          | North Carolina is experiencing the most severe drought we’ve seen in decades. Residents are suffering through an extreme cost-of-living crisis, yet utility monopolies like Duke Energy and Carolina Water are only increasing our rates further. At the same time, multi-billion dollar tech corporations are building hundreds of data centers across the state that will pollute our environment, use millions of gallons of water, and raise our utility bills even further. The people of North Carolina say: ENOUGH! We won’t shoulder the bill for billionaire greed! 
+          br
+          br
+          | All across the state, people have been fighting back and winning local moratoriums—from Charlotte to Durham to Boone. These are important victories, but we need our state government to do more to stop the reckless expansion of data centers in our communities. 
+          br 
+          br
+          | We, the undersigned residents of North Carolina, demand that the NC General Assembly: 
+        ol 
+          li Repeal the state’s tax incentives for data centers
+          li Stop Duke Energy from raising rates by 18% to pay for more data centers
+          li Pass a statewide ban to stop building new data centers
+      #sign.body 
+        h2 Sign the Petition 
+        p.subtitle 
+        include sign.pug
+        p 
+          i Contact information will be used to send updates about upcoming meetings and ways to take action. 
+      #endorse.body
+        h2 Endorse as an Organization / Elected Official
+        include org-sign.pug
+    script(src = "/dist/main.js")

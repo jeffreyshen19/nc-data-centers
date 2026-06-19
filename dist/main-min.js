@@ -1,0 +1,1 @@
+function toggleName(){var e=document.getElementById("name");"chinese"==e.className?(e.innerHTML="Jeffrey Shen",e.className=""):(e.innerHTML="沈嘉成",e.className="chinese")}
